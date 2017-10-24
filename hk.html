@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--<a href="http://www.baidu.com">第一个a标签</a>-->
+<!--<a href="http://www.baidu.com">第二个a标签</a>-->
+<!--<a href="http://www.baidu.com">第三个a标签</a>-->
+<!--<a href="http://www.baidu.com">第四个a标签</a>-->
+
+<ul>
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+</ul>
+
+<script>
+//    <!--委托事件-->
+//    var getUl=document.querySelector('ul');
+//    getUl.addEventListener('click',function (ev) {
+//        console.log(ev);
+//        var target=ev.target;
+//        if (target.nodeName.toLowerCase()=='li'){
+//            alert(target.innerHTML);
+//        }
+//    });
+    //    var getA=document.querySelectorAll('a');
+    //    for (var i=0;i<getA.length;i++){
+    //        getA[i].index = i;
+    //        getA[i].addEventListener('click',function (e) {
+    //            e.preventDefault();
+    //            alert(this.index);
+    //        });
+    //    }
+//把URL地址转换为json对象
+    var url = 'http://www.baidu.com?wd=123&name=张三&pwd=123456&ID=2';
+//    var json = {};
+    function getJson(url) {
+////        以问号与&符号分割
+//        var arr = url.split('?')[1].split('&');
+//        for (var i = 0; i < arr.length; i++) {
+////            以等号分割
+//            var a = arr[i].split('=');
+////            把分割后的值添加到声明好的json数据里（数组的第0项的值为数组的第一项）
+//            json[a[0]] = a[1];
+////            类似于getA[i].index=i;
+//        }
+//        return json;
+    }
+    getJson(url);
+//    console.log(json);
+</script>
+</body>
+</html>
